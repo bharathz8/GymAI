@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import { HeroVideo } from "../assets/assets";  // Assuming your video is imported here
 import Button from "../components/Button";
 
 const Hero = () => {
@@ -39,9 +38,9 @@ const Hero = () => {
       >
         {isVideoVisible && (
           <>
-            <source src={HeroVideo} type="video/mp4" /> {/* H.264 encoded MP4 video */}
-            <source src="video.webm" type="video/webm" />
-            <source src="video.ogv" type="video/ogg" />
+            <source src="/hero.mp4" type="video/mp4" /> {/* H.264 encoded MP4 video */}
+            <source src="/hero.webm" type="video/webm" />
+            <source src="/hero.ogv" type="video/ogg" />
           </>
         )}
         Sorry, your browser does not support the video tag.
