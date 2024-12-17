@@ -5,6 +5,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 @keyframes gradientMove {
   0% { background-position: 0% 50%; }
@@ -13,9 +17,10 @@
 }
 
 body {
-  background: linear-gradient(to bottom right, #0A0A0A, #2C2C2C, #3B3B3B);
-  background-size: 400% 400%;
-  animation: gradientMove 15s ease infinite;
+  background: linear-gradient(135deg, #121212, #1c1c1c);
+  font-family: "Poppins", sans-serif;
+  color: white;
+  overflow-x: hidden;
 }
 
 
@@ -39,7 +44,7 @@ body {
 
 @layer utilities {
   .padding {
-    @apply sm:px-16 px-8 sm:py-24 py-12;
+    @apply sm:px-16 px-8 sm:py-24 py-8;
   }
 
   .padding-x {

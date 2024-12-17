@@ -48,6 +48,56 @@ export const FeaturesConstant = [
     },
 ];
 
+export const PricingConstants = [
+    {
+      title: "Basic",
+      price: "Free",
+      description: "For individuals looking to get started and explore basic features.",
+      features: [
+        "Access to core features",
+        "Limited usage (10 sessions/month)",
+        "Basic progress tracking",
+        "Standard customer support",
+        "Access on 1 device",
+      ],
+      buttonText: "Get Started",
+      buttonVariant: "primary",
+    },
+    {
+      title: "Pro",
+      price: "$20/month",
+      description: "Perfect for growing enthusiasts or professionals needing advanced tools.",
+      features: [
+        "Everything in Basic",
+        "Unlimited usage",
+        "Advanced analytics and insights",
+        "Multi-device access (3 devices)",
+        "Personalized recommendations",
+        "Priority customer support",
+      ],
+      buttonText: "Upgrade Now",
+      buttonVariant: "secondary",
+      highlight: true,
+    },
+    {
+      title: "Premium",
+      price: "$50/month",
+      description: "Unlock the ultimate experience with exclusive features for teams or businesses.",
+      features: [
+        "Everything in Pro",
+        "Unlimited devices and users",
+        "Dedicated account manager",
+        "Early access to new features",
+        "Custom analytics reports",
+        "24/7 priority support",
+      ],
+      buttonText: "Contact Us",
+      buttonVariant: "outline",
+    },
+  ];
+  
+  
+
 // export const services = [
 //     {
 //         imgURL: truckFast,
