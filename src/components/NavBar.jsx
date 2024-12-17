@@ -14,9 +14,10 @@ const NavBar = () => {
     <header className="fixed bg-transparent top-0 left-0 z-20 w-full">
       <nav className="flex justify-between items-center px-6 py-4 max-container">
         {/* Logo */}
-        <a href="/" className="text-white font-bold text-2xl">
+        <a href="/" className="text-white font-bold text-2xl md:text-3xl">
           GymAi
         </a>
+
 
         {/* Desktop Navigation Links */}
         <ul className="hidden lg:flex gap-10">
@@ -48,9 +49,8 @@ const NavBar = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`fixed inset-0 bg-black bg-opacity-90 z-20 flex flex-col items-center justify-center space-y-6 text-white transform ${
-            menuOpen ? "translate-x-0" : "translate-x-full"
-          } transition-transform duration-300`}
+          className={`fixed inset-0 bg-black bg-opacity-90 z-20 flex flex-col items-center justify-center space-y-6 text-white transform ${menuOpen ? "translate-x-0" : "translate-x-full"
+            } transition-transform duration-300`}
         >
           {navLinks.map((item) => (
             <a
