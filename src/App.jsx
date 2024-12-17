@@ -1,9 +1,27 @@
 import { useState } from 'react';
-import Home from './pages/Home';
+import { Hero, Features, Pricing, Testimonials, Footer } from './sections/index';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
-    <Home />
+    <main>
+    <NavBar />
+    <section className="xl:padding-1 wide:padding-r padding-b">
+      <Hero />
+    </section>
+    <section className='padding'>
+      <Features />
+    </section>
+    <section className="padding">
+      <Testimonials />
+    </section>
+    <section className="padding-x sm:py-32 py-16 w-full">
+      <Pricing />
+    </section>
+    <section className="bg-black padding-x padding-t pb-8">
+      <Footer />
+    </section>
+  </main>
   )
 }
 
