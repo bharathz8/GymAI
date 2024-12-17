@@ -1,5 +1,5 @@
 // import { facebook, instagram, shieldTick, support, truckFast, twitter } from "../assets/icons";
-import { ReviewImg, CountReps, LogExercise, TrackProgress } from "../assets/assets";
+import { ReviewImg, CountReps, LogExercise, TrackProgress, Gym, fitness, boxing, yoga } from "../assets/assets";
 
 export const navLinks = [
     { href: "#Features", label: "Features" },
@@ -9,6 +9,25 @@ export const navLinks = [
     { href: "#FAQs", label: "FAQs"},
     { href: "#ContactUs", label: "Contact Us"},
 ];
+
+export const HeroConstant = [
+    {
+        imgURL: Gym,
+        name: "Gym",
+    },
+    {
+        imgURL: fitness,
+        name: "Fitness",
+    },
+    {
+        imgURL: boxing,
+        name: "Boxing",
+    },
+    {
+        imgURL: yoga,
+        name: "Yoga",
+    },
+]
 
 export const FeaturesConstant = [
     {

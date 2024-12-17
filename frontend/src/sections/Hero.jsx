@@ -38,8 +38,7 @@ const Hero = () => {
       >
         {isVideoVisible && (
           <>
-            <source src="https://res.cloudinary.com/dwj0x8dmd/video/upload/v1734411201/hero_b07lbb.mp4" type="video/mp4" /> {/* H.264 encoded MP4 video */}
-            <source src="https://res.cloudinary.com/dwj0x8dmd/video/upload/v1734411206/hero_cgdbta.webm" type="video/webm" />
+            <source src="/hero.mp4" type="video/mp4" /> {/* H.264 encoded MP4 video */}
           </>
         )}
         Sorry, your browser does not support the video tag.
