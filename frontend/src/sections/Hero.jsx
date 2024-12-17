@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import Button from "../components/Button";
-import { heromp4, herowebm } from "../assets/assets";
 
 const Hero = () => {
   const [isVideoVisible, setIsVideoVisible] = useState(false);
@@ -39,8 +38,8 @@ const Hero = () => {
       >
         {isVideoVisible && (
           <>
-            <source src={heromp4} type="video/mp4" /> {/* H.264 encoded MP4 video */}
-            <source src={herowebm} type="video/webm" />
+            <source src="https://res.cloudinary.com/dwj0x8dmd/video/upload/v1734411201/hero_b07lbb.mp4" type="video/mp4" /> {/* H.264 encoded MP4 video */}
+            <source src="https://res.cloudinary.com/dwj0x8dmd/video/upload/v1734411206/hero_cgdbta.webm" type="video/webm" />
           </>
         )}
         Sorry, your browser does not support the video tag.
