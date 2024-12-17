@@ -1,14 +1,8 @@
 {
-    "headers": [
-      {
-        "source": "/video.mp4",
-        "headers": [
-          {
-            "key": "Content-Type",
-            "value": "video/mp4"
-          }
-        ]
-      }
-    ]
-  }
-  
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
