@@ -12,11 +12,13 @@ const Pricing = () => {
   }, []);
 
   return (
-    <section className="py-20 px-4" id="pricing">
-      <div className="container mx-auto text-center mb-12">
-        <h2 className="text-5xl font-bold text-gray-100 mb-4">Our Pricing Plans</h2>
-        <p className="text-gray-400 max-w-3xl mx-auto text-lg">
-          Pick the perfect plan for your journey—simple, transparent, and effective.
+    <section className="px-4" id="Pricing">
+      <div className='flex flex-col justify-center items-center gap-4 mb-10'>
+        <h2 className='text-4xl sm:text-5xl font-palanquin font-bold text-white'>
+          Our <span className='text-red-500'>Pricing</span> Plans
+        </h2>
+        <p className='lg:max-w-lg text-center font-montserrat text-slate-gray'>
+        Unlock your potential with plans that are simple, smart, and unstoppable
         </p>
       </div>
       <div

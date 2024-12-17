@@ -1,5 +1,5 @@
 // import { facebook, instagram, shieldTick, support, truckFast, twitter } from "../assets/icons";
-import { ReviewImg, CountReps, LogExercise, TrackProgress, Gym, fitness, boxing, yoga } from "../assets/assets";
+import { ReviewImg, CountReps, LogExercise, TrackProgress, Gym, fitness, boxing, yoga, b1, g3, b3, g2, g1, b2} from "../assets/assets";
 
 export const navLinks = [
     { href: "#Features", label: "Features" },
@@ -95,6 +95,87 @@ export const PricingConstants = [
       buttonVariant: "outline",
     },
   ];
+
+  export const testimonialConstants = [
+    {
+      id: 1,
+      name: "Neeraj Singh",
+      position: "Fitness Enthusiast",
+      review:
+        "This platform has completely transformed my fitness journey. The tools are intuitive and the experience is fantastic!",
+      image: b1,  
+    },
+    {
+      id: 2,
+      name: "Kruthika",
+      position: "Yoga Instructor",
+      review:
+        "I love how this platform helps my clients achieve their wellness goals with ease. The features are user-friendly and efficient!",
+      image: g3, 
+    },
+    {
+      id: 3,
+      name: "Kevin",
+      position: "Personal Trainer",
+      review:
+        "Tracking progress has never been easier. This platform delivers everything I need to stay motivated and organized.",
+      image: b2,  
+    },
+    {
+      id: 4,
+      name: "Mohammed Affan",
+      position: "Nutrition Specialist",
+      review:
+        "The nutrition tracking feature has been a game-changer for my clients. It's intuitive and provides valuable insights!",
+      image: b3,  
+    },
+    {
+      id: 5,
+      name: "Samantha",
+      position: "Fitness Coach",
+      review:
+        "The analytics feature helps in making data-driven decisions for workouts. It’s a must-have for anyone serious about fitness!",
+      image: g1,  
+    },
+    {
+      id: 6,
+      name: "Rashmika",
+      position: "Physical Therapist",
+      review:
+        "The platform supports comprehensive therapy sessions. The ease of accessibility and the helpful community make it unbeatable!",
+      image: g2,  
+    }
+  ];
+  
+
+  export const faqConstants = [
+    {
+      id: 1,
+      question: "How do I create a new account?",
+      answer: "To create a new account, click on the 'Sign Up' button on the homepage and fill in the required details.",
+    },
+    {
+      id: 2,
+      question: "Can I track my progress over time?",
+      answer: "Yes, you can easily track your progress using the analytics section, which provides insights into your fitness journey.",
+    },
+    {
+      id: 3,
+      question: "Is there a mobile app available?",
+      answer: "Currently, our platform is available as a web application. We are working on a mobile app to enhance user experience.",
+    },
+    {
+      id: 4,
+      question: "How can I cancel my subscription?",
+      answer: "To cancel your subscription, navigate to 'Account Settings' and select 'Manage Subscription' to cancel anytime.",
+    },
+    {
+      id: 5,
+      question: "Are my data and progress secure?",
+      answer: "Yes, we prioritize user privacy and data security. Your information is encrypted and stored securely.",
+    }
+  ];
+  
   
   
 

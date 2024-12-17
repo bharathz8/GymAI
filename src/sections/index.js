@@ -1,7 +1,8 @@
 import Hero from "./hero";
 import Features from "./features";
 import Pricing from "./Pricing";
-import Testimonials from "./testimonials";
-import Footer from "./footer";
+import Testimonials from "./Testimonials";
+import FAQ from "./FAQ";
+import Footer from "./Footer";
 
-export {Hero, Features, Pricing, Testimonials, Footer};
+export {Hero, Features, Pricing, Testimonials, FAQ, Footer};

@@ -34,7 +34,7 @@ const Hero = () => {
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold mb-4 font-sans tracking-wide">
             Transform Your Fitness with Gym AI - Smarter Plans, Faster Results
           </h1>
-          <h2 className="text-3xl sm:text-4xl font-semibold mb-6">
+          <h2 className="text-3xl text-red-500 sm:text-4xl font-semibold mb-6">
             {HeroConstant[currentIndex].name}
           </h2>
           <p className="text-xl mb-6 sm:text-2xl">

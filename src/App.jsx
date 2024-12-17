@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Hero, Features, Pricing, Testimonials, Footer } from './sections/index';
+import { Hero, Features, Pricing, Testimonials, Footer, FAQ } from './sections/index';
 import NavBar from './components/NavBar';
 
 function App() {
@@ -12,13 +12,16 @@ function App() {
     <section className='padding'>
       <Features />
     </section>
-    <section className="padding-x sm:py-32 py-16 w-full">
+    <section>
       <Pricing />
     </section>
-    <section className="padding">
+    <section>
       <Testimonials />
     </section>
-    <section className="bg-black padding-x padding-t pb-8">
+    <section>
+      <FAQ />
+    </section>
+    <section className="bg-transparent padding-x padding-t pb-8">
       <Footer />
     </section>
   </main>
