@@ -21,7 +21,7 @@ function App() {
     <section>
       <FAQ />
     </section>
-    <section className="bg-transparent padding-x padding-t pb-8">
+    <section className="bg-transparent padding-t pb-8">
       <Footer />
     </section>
   </main>

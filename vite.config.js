@@ -5,9 +5,16 @@ export default defineConfig({
   plugins: [react()],
   base: '/',
   build: {
-    outDir: 'dist', // Ensures correct output directory
+    outDir: 'dist',
     rollupOptions: {
-      input: './index.html', // Entry point
+      input: './index.html',
     },
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import "node_modules/@fortawesome/fontawesome-free/css/all.min.css";`
+      }
+    }
+  }
 });
