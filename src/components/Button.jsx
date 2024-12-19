@@ -5,7 +5,7 @@ const Button = ({
     textColor,
     borderColor,
     fullWidth,
-    transparent, // added transparent prop
+    transparent,
 }) => {
     return (
         <button

@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { testimonialConstants } from "../constants/constants";
 import TestimonialCard from "../components/testimonialCard";
+import { useRecoilState } from "recoil";
+import { reviewIndexAtom } from "../recoil/Atom";
 
 const TestimonialSection = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useRecoilState(reviewIndexAtom);
 
   // Auto-rotate testimonials every 4 seconds
   useEffect(() => {

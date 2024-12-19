@@ -2,9 +2,12 @@
 import React, { useEffect, useState } from "react";
 import { PricingConstants } from "../constants/constants";
 import PricingCard from "../components/PricingCard";
+import { useRecoilState } from "recoil";
+import { visibleAtom } from "../recoil/Atom";
 
 const Pricing = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  
+  const [isVisible, setIsVisible] = useRecoilState(visibleAtom);
 
   useEffect(() => {
     const timeout = setTimeout(() => setIsVisible(true), 200);

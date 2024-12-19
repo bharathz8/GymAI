@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
-import { faqConstants } from '../constants/constants';
+import { useRecoilState } from 'recoil';
+import { openAtom } from '../recoil/Atom';
 
 const FAQCard = ({ faq }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [openID, setOpenID] = useRecoilState(openAtom);
 
-  const toggleAnswer = () => setIsOpen(!isOpen);
+  const toggleAnswer = () => {
+    setOpenID(openID === faq.id ? null : faq.id);
+  }
+
+  const isOpen = openID === faq.id;
 
   return (
     <div className="bg-gray-800 p-4 rounded-lg shadow-md">

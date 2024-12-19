@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRightToBracket, faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { navLinks } from "../constants/constants.js";
+import { useRecoilState } from "recoil";
+import { menuAtom } from "../recoil/Atom.jsx";
 
 const NavBar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useRecoilState(menuAtom);
 
   const handleToggle = () => {
     setMenuOpen(!menuOpen);
